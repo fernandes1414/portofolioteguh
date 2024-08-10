@@ -1,0 +1,259 @@
+body {
+  font-family: poppins;
+}
+
+/* Welcome Text Styles */
+#welcome h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  color: blue;
+  text-align: center;
+  animation: blink 2s infinite;
+}
+.lead {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: poppins;
+}
+/* Blink Animation */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* About Section Styles */
+#about {
+  background-color: #f7f7f7;
+  padding: 50px 0;
+}
+
+.profile-pic {
+  position: relative;
+  margin: 20px;
+}
+
+.profile-pic img {
+  width: 350px;
+  height: 350px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.profile-pic:hover .overlay {
+  opacity: 1;
+}
+
+.overlay i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.about-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-content li {
+  margin-bottom: 10px;
+}
+
+.about-content i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #666;
+}
+
+/* Skills Section */
+#skills {
+  background-color: #f7f7f7; /* light gray background */
+  padding: 50px 0;
+}
+
+#skills h2 {
+  margin-bottom: 20px;
+}
+
+#skills h3 {
+  width: 100%;
+}
+
+#skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#skills li {
+  margin-bottom: 10px;
+}
+
+#skills img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section Styles */
+#portofolio {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.portofolio-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Contact Section Styles */
+#contact {
+  background-color: #f7f7f7;
+  padding: 100px 0;
+}
+
+.contact-form {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.contact-form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #23527c;
+}
+
+.contact-info {
+  text-align: left;
+  padding: 60px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3 {
+  font-weight: bold;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+}
+
+/* Footer Section Styles */
+#footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+}
+
+#footer h3 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+#footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer li {
+  margin-bottom: 10px;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #ccc;
+}
+
+#footer .fab {
+  margin-right: 10px;
+}
+
+#footer p {
+  margin-bottom: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #333; /* or any other color you prefer */
+}
